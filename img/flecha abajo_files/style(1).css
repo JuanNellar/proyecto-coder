@@ -1,0 +1,144 @@
+/*
+ Theme Name:   Fractal
+ Theme URI:    demux.com
+ Description:  demux
+ Author:       demux
+ Author URI:   http://www.demux.com
+ Template:     Divi
+ Version:      1.0.0
+ Tags:         
+ Text Domain:  
+*/
+@import url("../Divi/style.css");
+
+#ccpw-datatable-44_paginate, #ccpw-datatable-44_wrapper .bottom{
+	display: none;
+}
+
+#ccpw-datatable-44_wrapper{
+	margin: 20px auto 0;
+}
+
+.et_pb_scroll_top.et-pb-icon{
+	background: #F8E800 !important;
+}
+
+#footer_fractal .et-menu li {
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+	width:100%;
+   }
+
+#nta-wabutton-145{
+    margin: 30px 0 30px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
+#redes_header .et_pb_social_media_follow_network_0_tb_header a.icon , #redes_header .et_pb_social_media_follow_network_1_tb_header a.icon{
+	background-color: transparent !important;
+	border-radius: 4px;
+	
+}
+
+#redes_header .et_pb_social_media_follow li a.icon:before{
+	color: #F8E800 !important;
+	
+}
+
+.et_pb_newsletter_button_wrap {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 28% !important;
+}
+
+.et_pb_newsletter_field.et_pb_contact_field_last_phone{
+	 flex-basis: 70% !important;
+}
+
+#ccpw-datatable-44{
+	width: 0px !important;
+} 
+
+
+
+/*formulario de contacto*/
+
+
+#form_fractal form{
+    display: grid !important;
+    grid-template-columns: 50% 50%;
+    
+}
+
+#form_fractal .et_contact_bottom_container{
+grid-column: 2/2 !important;
+justify-self: end !important;
+}
+
+#form_fractal .et_pb_contact_field textarea.et_pb_contact_message {
+
+min-height: 230px !important;
+
+}
+
+#form_fractal p.et_pb_contact_field{
+    margin-bottom: 42px !important;
+}
+
+#nta-wabutton-145{
+    right: -200px !important;
+}
+
+.wa__stt_offline{
+    background: none !important;
+}
+
+.wa__btn_txt{
+    display:none !important;
+}
+
+#logo_fractal_header{
+    z-index: 0 !important;
+}
+
+#menu_glosario ul,#menu_glosario li {
+    width: 100% !important;
+}
+
+
+@media (max-width: 980px){
+
+    .footer_menu .et_pb_menu__menu {
+
+        display: block !important;
+    
+    }
+
+    .footer_menu .mobile_menu_bar{
+        display: none !important;
+    }
+
+    .footer_menu .et_pb_menu__wrap {
+
+        justify-content: flex-start !important;
+    }
+
+}
+
+/*promociones*/
+/*
+.promos-blog .et_pb_salvattore_content[data-columns]::before {
+	content: '4 .column.size-1of4' !important;
+}
+@media only screen and ( min-width: 981px ) {
+	.promos-blog .column.size-1of4 {
+	    width: 24%!important;
+	    margin-right: 1%;
+	}
+}*/
+
+.promos-blog h2{
+    display: none !important;
+}

@@ -1,0 +1,432 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+/* pagina principal */
+
+.logo{
+    margin-left: 50px;
+    
+}
+
+    
+
+
+
+
+header{
+    background-image: linear-gradient(to top, rgb(29, 27, 27), rgb(13, 56, 13));
+    display: flex;
+    text-align: center;
+    border: 3px solid rgb(11, 12, 12);
+    flex-direction: row;
+    justify-content: flex-start;
+    background-size: 100%;
+    width: 100%;
+    height: 25vh;
+    
+    
+    
+}
+.prin{
+    height: 60vh;
+    display: flex;
+    flex-direction: inline;
+}
+.nosotros {
+    margin-top: 25px;
+}
+    
+   
+
+.lista{
+    display:inline-flex;
+
+    padding: 7% ;
+    width: 15%;
+    font-size: 20px;
+    margin-right: 50px;
+    
+
+    
+}
+
+    
+
+ li { 
+    display: inline-block;
+   
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10%;
+  
+    
+ }
+ .lista li a{
+    text-decoration: none;
+    color: rgb(240, 234, 234);
+  
+   
+}
+.lista li:hover {
+    background-color: rgb(8, 134, 56);
+    border-radius: 20%;
+    
+}
+h2{
+    font-family: 'Roboto',Helvetica,Arial,Lucida,sans-serif;
+    color: rgb(6, 82, 37);
+    
+    line-height: 1em;
+    font-weight: bold;
+    position: absolute;
+    left: 40%;
+    font-size: 30px;
+    margin-top: 2%;
+  
+    
+    
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+   color: rgb(245, 240, 240);
+   background-image: linear-gradient(to top, rgb(29, 27, 27), rgb(13, 56, 13));
+    text-align: left;
+    border: solid 3px green;
+    width: 100%;
+    height: 15vh;
+    
+    
+}
+
+
+section{
+    display: flex;
+    justify-content: center;
+}
+ 
+.main__parrafo1{
+    color: rgb(19, 16, 16);
+    font-style: italic;
+    font-size: 20px;
+    line-height: 1.5;
+    width: 700px;
+    padding: 5%;
+    display: inline-block;
+    position: relative;
+    margin-top: 3%;
+  
+    
+    
+}
+.main__div .nosotros p{
+    margin-left: 10%;
+    padding-left: 5%;
+    margin-top: 3%;
+}
+.main__div .nosotros img{
+    margin-left: 5%;
+    margin-bottom: 8%;
+}
+.main__div.crypto{
+    display: flex;
+    flex-direction: row;
+}
+.main__div .crypto p{
+    margin-right: 5%;
+}
+.main__div .crypto img{
+    margin-top: 10%;
+    margin-left: 5%;
+}
+.crypto section h2{
+    margin-inline-start: -35%;
+}
+
+
+
+img{
+    width: 20%;
+    height: 100%;
+    
+}
+
+#servicios{
+    display: inline-block;
+    flex-direction: row;
+    margin-bottom: 50px;
+    margin-top: 75px;
+    padding: 20px;
+   
+}
+#servicios a{
+    align-items: center;
+    margin-right: 100px;
+    margin-left: 60px;
+    margin-top: 30px;
+   
+    
+}
+
+.grillaPadre{
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr,1fr;
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr;
+    grid-template-areas:
+    " header header header header"
+    " prin prin prin prin"
+    "prin prin prin prin "
+    "footer footer footer footer";
+}
+.header{
+    grid-area: header;
+}
+.prin{
+    grid-area: prin;
+}
+.footer{
+    grid-area: footer;
+}
+
+
+
+
+
+
+/* pagina academia */
+.mainAcademia{
+    display: flex;
+    
+}
+
+
+.mainAcademia p{
+    color: rgb(19, 16, 16);
+    font-style: italic;
+    font-size: 20px;
+    line-height: 1.5;
+    width: 700px;
+    padding: 5%;
+    display: inline-block;
+    position: relative;
+    margin-top: 5%;
+    margin-left: 5%;
+    
+
+}
+
+
+/* pagina mineria */
+.mainMineria{ 
+   display: flex;
+    flex-direction: column;
+  
+
+   
+
+}
+
+
+.mainMineria h2{
+    margin-top: 5%;
+    margin-top: 5%;
+}
+
+
+
+/* pagina contacto */
+.mainContacto{
+    display: flex;
+    margin-top: 0%;
+} 
+.mainContacto h2{
+    margin-top: 0%;
+}
+.formulario{
+    display: flexbox;
+   margin-left: 10%;
+  padding-top: 5%;
+  margin-bottom: 10%;
+  
+}
+
+
+.formulario input{
+    display: block;
+    width: 400px;
+    height: 50px;
+    border-radius: 7%;
+    border-color: rgb(4, 167, 53);
+    position: left;
+    margin-top: 10%;
+    color: rgb(15, 15, 15);
+    
+    font-style: bold;
+    
+}
+.formulario input:hover{
+    background-color: rgb(6, 100, 21);
+}
+
+.contacto{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 30px;
+    margin-right : 30%;
+    margin-bottom: 10%;
+   
+}
+.grillaContacto {
+    display: grid; 
+    grid-template-columns: 1.1fr 46.9% 1fr; 
+    grid-template-rows: 2fr 6.5fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "header header header"
+      ". mainContacto ."
+      "footer footer footer"; 
+  }
+  .headerContacto { grid-area: header; }
+  .mainContacto { grid-area: mainContacto; }
+  .footerContacto { grid-area: footer; }
+  
+
+
+/* pagina trade */
+.mainTrade{
+    display: flex;
+   
+}
+.mainTrade h2{
+    margin-top: 5%;
+}
+    
+.mainTrade p{
+    padding: 5%;
+    color: rgb(12, 11, 11);
+    font-style: italic;
+    font-size: 20px;
+    line-height: 1.5;
+    width: 700px;
+    margin-left: 10px ;
+    display: inline-block;
+    position: relative;
+    left: 15%;
+    margin-top: 10%;
+}
+/* media para tablet */
+    @media (max-width: 768px){
+        
+header{
+   
+    display: flex;
+    
+    flex-direction: inline block;
+    width: 100%;
+    height: 20vh;
+    align-items: center;
+    
+    
+    
+}
+.prin{
+    width: 100%;
+}
+.lista{
+    display:flex;
+    
+    padding: 7% ;
+
+    font-size: 20px;
+    
+    
+}}
+/* para escritorio */
+@media (max-width: 420px){
+    header{
+   
+        display: flex;
+        flex-direction:  column;
+        width: 100vw;
+        height: 25vh;
+        align-items: center;
+        
+        
+        
+    }
+    .nosotros img{
+        display: none;
+    }
+    .nosotros{ flex-direction: column;}
+    .crypto{
+        max-width: 100%;
+        flex-direction: row;
+        align-items: center;
+        
+    }
+    
+#servicios{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding: 20px;
+    align-items: center;
+   
+}
+#servicios a{
+    
+    width: 150 vw;
+    margin-top: 30px;
+   
+    
+}.formulario{
+    display: flexbox;
+   padding-left: 10%;
+   padding-top: 5%;
+   margin-bottom: 15%;
+   margin-top: 5%;
+   max-width: 30%;
+ 
+
+
+}
+
+.contacto{
+    margin:5%;
+   
+}
+.formulario input{
+    width: auto;
+    
+}
+.mainContacto{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+footer {
+    display: flex;
+  flex-direction: column;
+    justify-content:space-evenly;
+   color: rgb(245, 240, 240);
+   
+    text-align: center;
+    
+    width: 100%;
+    height: 15vh;
+    
+    
+}
+
+        
+    }
+
+
+
+
