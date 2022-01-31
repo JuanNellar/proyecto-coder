@@ -9,12 +9,19 @@
     margin-left: 50px;
     
 }
+.main__div i{
+    color: rgb(239, 245, 239);
+    background-color: green;
+    font-size: 70px;
+    border-radius: 15%;
+}
+.fixed{
+    position: fixed;
+    right: 50px;
+   
+}
 
     
-
-
-
-
 header{
     background-image: linear-gradient(to top, rgb(29, 27, 27), rgb(13, 56, 13));
     display: flex;
@@ -23,8 +30,8 @@ header{
     flex-direction: row;
     justify-content: flex-start;
     background-size: 100%;
-    width: 100%;
-    height: 25vh;
+    
+    height: 23vh;
     
     
     
@@ -36,23 +43,29 @@ header{
 }
 .nosotros {
     margin-top: 25px;
+    display: flex;
 }
+.iconoA{
+    margin-left: 40%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     
+}
+
+
    
 
 .lista{
     display:inline-flex;
 
     padding: 7% ;
-    width: 15%;
-    font-size: 20px;
-    margin-right: 50px;
+    width: 10%;
+    font-size: 1.5em;
+    margin-right: 40px;
     
 
     
 }
-
-    
 
  li { 
     display: inline-block;
@@ -60,12 +73,10 @@ header{
     margin: 10px;
     padding: 10px;
     border-radius: 10%;
-  
-    
  }
  .lista li a{
     text-decoration: none;
-    color: rgb(240, 234, 234);
+    color: white;
   
    
 }
@@ -73,19 +84,18 @@ header{
     background-color: rgb(8, 134, 56);
     border-radius: 20%;
     
+    
 }
 h2{
-    font-family: 'Roboto',Helvetica,Arial,Lucida,sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: rgb(6, 82, 37);
-    
-    line-height: 1em;
+    line-height: 1fr;
     font-weight: bold;
     position: absolute;
-    left: 40%;
-    font-size: 30px;
-    margin-top: 2%;
-  
     
+    left: 40%;
+    font-size: 2em;
+    margin-top: 2%;
     
 }
 
@@ -97,28 +107,31 @@ footer {
    background-image: linear-gradient(to top, rgb(29, 27, 27), rgb(13, 56, 13));
     text-align: left;
     border: solid 3px green;
-    width: 100%;
+    
     height: 15vh;
-    
-    
 }
 
 
 section{
     display: flex;
-    justify-content: center;
+    justify-content:space-around;
+    margin-left: 7%;
+    margin-top: 5%;
+  
 }
+
+
  
 .main__parrafo1{
     color: rgb(19, 16, 16);
     font-style: italic;
-    font-size: 20px;
+    font-size: 1.5em;
     line-height: 1.5;
     width: 700px;
     padding: 5%;
     display: inline-block;
     position: relative;
-    margin-top: 3%;
+    margin-top: 5%;
   
     
     
@@ -128,7 +141,8 @@ section{
     padding-left: 5%;
     margin-top: 3%;
 }
-.main__div .nosotros img{
+ .main__div .nosotros img{
+   margin-top: 3%;    
     margin-left: 5%;
     margin-bottom: 8%;
 }
@@ -143,15 +157,14 @@ section{
     margin-top: 10%;
     margin-left: 5%;
 }
-.crypto section h2{
-    margin-inline-start: -35%;
+.main__div .crypto h2{
+    left: 5%;
 }
 
-
-
 img{
-    width: 20%;
-    height: 100%;
+    width: 18%;
+    height: 80%;
+    
     
 }
 
@@ -171,11 +184,18 @@ img{
    
     
 }
+.tituloServicios{
+    left: 42%;
+    font-size: 2.5em;
+    margin-top: 0;
+}
+.crypto{
+    display: flex;
+}
 
 .grillaPadre{
     display: grid;
-    grid-template-columns: 1fr, 1fr, 1fr,1fr;
-    grid-template-rows: 1fr, 1fr, 1fr, 1fr;
+   
     grid-template-areas:
     " header header header header"
     " prin prin prin prin"
@@ -192,29 +212,39 @@ img{
     grid-area: footer;
 }
 
-
-
-
-
-
 /* pagina academia */
 .mainAcademia{
     display: flex;
+    flex-direction: column;
     
 }
+.imagenAcademia{
+    position: fixed;
+    height: 30%;
+    margin-top: 5%;
+}
+.boots{
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
 
+.imagen{
+    margin-left: 30%;
+    width: 500px;
+}
 
 .mainAcademia p{
     color: rgb(19, 16, 16);
     font-style: italic;
-    font-size: 20px;
+    font-size: 1.5em;
     line-height: 1.5;
     width: 700px;
     padding: 5%;
     display: inline-block;
     position: relative;
     margin-top: 5%;
-    margin-left: 5%;
+    margin-left: 30%;
     
 
 }
@@ -224,33 +254,64 @@ img{
 .mainMineria{ 
    display: flex;
     flex-direction: column;
-  
-
-   
 
 }
-
+.mainMineria p{
+    
+    margin-left: 30%;
+   
+}
+.blockchain{
+    right: 25%;
+    bottom: 25%;
+    padding-bottom: 5%;
+   
+}
 
 .mainMineria h2{
-    margin-top: 5%;
-    margin-top: 5%;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    
+}
+.imagenMineria{
+    position: fixed;
+    height: 20em;
 }
 
-
-
 /* pagina contacto */
+.mainContacto i{
+    color: rgb(239, 245, 239);
+    background-color: green;
+    font-size: 70px;
+    border-radius: 15%;
+}
+.fixed{
+    position: fixed;
+    right: 50px;
+    
+}
+.margen{
+   padding: 5%;
+    margin-bottom: 5%;
+}
+
 .mainContacto{
     display: flex;
     margin-top: 0%;
+    flex-direction: column;
 } 
 .mainContacto h2{
     margin-top: 0%;
+    position: absolute;
 }
 .formulario{
+
     display: flexbox;
-   margin-left: 10%;
+    
+   margin-left: 20%;
   padding-top: 5%;
   margin-bottom: 10%;
+  color: rgb(15, 15, 15);
   
 }
 
@@ -263,23 +324,34 @@ img{
     border-color: rgb(4, 167, 53);
     position: left;
     margin-top: 10%;
-    color: rgb(15, 15, 15);
-    
-    font-style: bold;
+    font-weight: bold;
     
 }
 .formulario input:hover{
     background-color: rgb(6, 100, 21);
+    color: rgb(238, 231, 231);
 }
 
 .contacto{
-    font-size: 25px;
+    font-size: 2em;
     font-family: Arial, Helvetica, sans-serif;
     height: 30px;
     margin-right : 30%;
     margin-bottom: 10%;
    
 }
+.boton{
+    margin-left: 100%;
+    color: white;
+    background-color: green;
+    font-weight: bold;
+}
+.accordion-body{
+    
+        padding: 5rem 1.25rem;
+    
+}
+
 .grillaContacto {
     display: grid; 
     grid-template-columns: 1.1fr 46.9% 1fr; 
@@ -297,135 +369,72 @@ img{
 
 
 /* pagina trade */
+
+
 .mainTrade{
     display: flex;
-   
+  
 }
+
+
 .mainTrade h2{
     margin-top: 5%;
+    color: rgb(6, 63, 15);
+    font-size: bold;
 }
     
 .mainTrade p{
     padding: 5%;
-    color: rgb(12, 11, 11);
+    color: rgb(15, 15, 15);
     font-style: italic;
-    font-size: 20px;
+    font-size: 1.5em;
     line-height: 1.5;
     width: 700px;
     margin-left: 10px ;
     display: inline-block;
     position: relative;
     left: 15%;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 /* media para tablet */
-    @media (max-width: 768px){
-        
-header{
-   
-    display: flex;
-    
-    flex-direction: inline block;
-    width: 100%;
-    height: 20vh;
-    align-items: center;
-    
-    
-    
-}
-.prin{
-    width: 100%;
-}
-.lista{
-    display:flex;
-    
-    padding: 7% ;
-
-    font-size: 20px;
-    
-    
-}}
-/* para escritorio */
-@media (max-width: 420px){
-    header{
-   
-        display: flex;
-        flex-direction:  column;
-        width: 100vw;
-        height: 25vh;
-        align-items: center;
-        
-        
-        
+@media (max-width: 768px) {
+    .header{
+        text-align: left;
     }
-    .nosotros img{
-        display: none;
+    .main__parrafo1{
+        max-width: 500px;
     }
-    .nosotros{ flex-direction: column;}
-    .crypto{
-        max-width: 100%;
-        flex-direction: row;
-        align-items: center;
-        
-    }
-    
-#servicios{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    padding: 20px;
-    align-items: center;
-   
+    #servicios a{
+       
+       margin-right: 30px;
+       margin-left: 50px;
+       margin-top: 30px;
+       
+      
+       
+   }
+       
 }
-#servicios a{
-    
-    width: 150 vw;
-    margin-top: 30px;
-   
-    
-}.formulario{
-    display: flexbox;
-   padding-left: 10%;
-   padding-top: 5%;
-   margin-bottom: 15%;
-   margin-top: 5%;
-   max-width: 30%;
- 
-
-
-}
-
-.contacto{
-    margin:5%;
-   
-}
-.formulario input{
-    width: auto;
-    
-}
-.mainContacto{
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-}
-
-footer {
-    display: flex;
-  flex-direction: column;
-    justify-content:space-evenly;
-   color: rgb(245, 240, 240);
-   
-    text-align: center;
-    
-    width: 100%;
-    height: 15vh;
-    
-    
-}
-
-        
-    }
+   @media (max-width: 425px){
+       .grillaPadre{
+           display: grid;
+           
+       }
+      .header{
+          width: 100%;
+      }
+      #servicios a{
+       
+       margin-right: 20px;
+       margin-left: 40px;
+       margin-top: 30px;
+       
+      
+       
+   }
+       
+      
+   }
 
 
 
