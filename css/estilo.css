@@ -165,7 +165,11 @@ img{
     width: 18%;
     height: 80%;
     
-    
+}
+img:hover{
+    transform: scale(1.3);
+    transition-property: all;
+    transition-duration: 1.5s;
 }
 
 #servicios{
@@ -193,35 +197,25 @@ img{
     display: flex;
 }
 
-.grillaPadre{
-    display: grid;
-   
-    grid-template-areas:
-    " header header header header"
-    " prin prin prin prin"
-    "prin prin prin prin "
-    "footer footer footer footer";
-}
-.header{
-    grid-area: header;
-}
-.prin{
-    grid-area: prin;
-}
-.footer{
-    grid-area: footer;
-}
 
+.iconoA:hover{
+    transform: scale(1.3);
+    transition-property: all;
+    transition-duration: 1.5s;
+}
 /* pagina academia */
 .mainAcademia{
     display: flex;
     flex-direction: column;
+    margin-top: 3%;
     
 }
 .imagenAcademia{
     position: fixed;
     height: 30%;
-    margin-top: 5%;
+    width: 13%;
+    margin-left: 5%;
+ 
 }
 .boots{
     width: 70%;
@@ -231,7 +225,7 @@ img{
 
 .imagen{
     margin-left: 30%;
-    width: 500px;
+    width: 400px;
 }
 
 .mainAcademia p{
@@ -275,10 +269,19 @@ img{
 }
 .imagenMineria{
     position: fixed;
-    height: 20em;
+    height: 35%;
+    width: 13%;
+    margin-left: 5%;
+ 
 }
 
 /* pagina contacto */
+.mainContacto h2:hover{
+    transform: scale(1.3);
+    transition-property: all;
+    transition-duration: 1.5s;
+}
+
 .mainContacto i{
     color: rgb(239, 245, 239);
     background-color: green;
@@ -288,6 +291,11 @@ img{
 .fixed{
     position: fixed;
     right: 50px;
+    color: rgb(239, 245, 239);
+    background-color: green;
+    font-size: 70px;
+    border-radius: 15%;
+   margin-top: 20PX;
     
 }
 .margen{
@@ -375,6 +383,12 @@ img{
     display: flex;
   
 }
+.imagenTrade{
+    height: 30%;
+    width: 13%;
+    margin-left: 5%;
+ 
+}
 
 
 .mainTrade h2{
@@ -396,46 +410,82 @@ img{
     left: 15%;
     margin-top: 5%;
 }
-/* media para tablet */
-@media (max-width: 768px) {
-    .header{
-        text-align: left;
-    }
-    .main__parrafo1{
-        max-width: 500px;
-    }
-    #servicios a{
-       
-       margin-right: 30px;
-       margin-left: 50px;
-       margin-top: 30px;
-       
-      
-       
-   }
-       
-}
-   @media (max-width: 425px){
-       .grillaPadre{
-           display: grid;
-           
-       }
-      .header{
-          width: 100%;
-      }
-      #servicios a{
-       
-       margin-right: 20px;
-       margin-left: 40px;
-       margin-top: 30px;
-       
-      
-       
-   }
-       
-      
-   }
+/* media para mobile */
 
+@media (max-width: 425px){
+     
+    .header {
+        flex-direction: column;
+    }
+    .header .logo{
+        
+            margin-left: 175px;
+            margin-top: 0.5em;
+        
+    }
+    .lista{
+        margin-right: 0;
+        padding: 5%;
+    }
+    .lista li{
+        display: inline-flex;
+        font-size: 0.8em;
+    }
+     .main__parrafo1{
+         
+         padding: 10%;
+     }
+     .main__div a{
+       display: none;
+
+     }
+     .main__div .nosotros p {
+         
+         padding-left: 0;
+     }
+     .main__div .nosotros img{
+         display: none;
+     }
+     .main__div .crypto img {
+         display: none;
+     }
+     .main__div .crypto p {
+        margin-top: 5%;
+    }
+     h2{
+         left: 30%;
+     }
+     .nosotros h2{
+         left: 20%;
+     }
+     .iconoA {
+         margin-top: 0%;
+         margin-left: 35%;
+         width: 25%;
+     }
+     #servicios{
+         padding: 0;
+     }
+     #servicios a{
+        align-items: center;
+        margin-right: 40px;
+        margin-top: 30px;
+        margin-left: 10px;
+        padding: 10px;
+    }
+    #servicios img{
+        width: 80%;
+    }
+    footer p{
+        margin-top: 10px;
+        margin-bottom: 1rem;
+        margin-left: 10px;
+    }
+    .tituloServicios {
+        left: 30%;
+    
+   }
+   }
 
 
 
